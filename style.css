@@ -62,87 +62,57 @@ body {
   overflow: hidden;
 }
 
-.scrollation > img {
+.scrollation > a > img {
   display: block;
   position: absolute;
   width: 8em;
-  margin: 2.69em auto;
-  animation: scrollation 6s linear infinite;
-  -webkit-animation: scrollation 6s linear infinite;
-  -moz-animation: scrollation 6s linear infinite;
-  -o-animation: scrollation 6s linear infinite;
+  margin: 4.69em auto;
+  animation: scrollation 9s linear infinite;
+  -webkit-animation: scrollation 9s linear infinite;
+  -moz-animation: scrollation 9s linear infinite;
+  -o-animation: scrollation 9s linear infinite;
 }
 
-.scrollation > img:last-child {
-/*// vertically centered, with height 2.68em,
-  // image height 1.31em */
-  margin-top: 3.37em;
-  height: auto;
-  animation: scrollator 6s linear infinite;
-  -webkit-animation: scrollator 6s linear infinite;
-  -moz-animation: scrollator 6s linear infinite;
-  -o-animation: scrollator 6s linear infinite;
+.scrollation > a:nth-child(1) > img {
+  animation-delay: -3;
+  -webkit-animation-delay: -3s;
+  -moz-animation-delay: -3s;
+  -o-animation-delay: -3s;
 }
 
-.scrollation > img:nth-child(1) {
-  animation-delay: -2;
-  -webkit-animation-delay: -2s;
-  -moz-animation-delay: -2s;
-  -o-animation-delay: -2s;
-}
-
-.scrollation > img:nth-child(2) {
-  animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  -o-animation-delay: 0.5s;
-}
-
-.scrollation > img:nth-child(3) {
-  animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -o-animation-delay: 2s;
+.scrollation > a:nth-child(2) > img {
+  animation-delay: -6s;
+  -webkit-animation-delay: -6s;
+  -moz-animation-delay: -6s;
+  -o-animation-delay: -6s;
 }
 
 @keyframes scrollation {
-  from { margin-top: 2.69em;  }
-  to   { margin-top: -2.69em; }
+  0% { margin-top: 4.69em;  }
+	40% { margin-top: 0em; }
+	60% { margin-top: 0em; }
+  100%   { margin-top: -4.69em; }
 }
 
 @-webkit-keyframes scrollation {
-  from { margin-top: 2.69em;  }
-  to   { margin-top: -2.69em; }
+  0% { margin-top: 4.69em;  }
+	45% { margin-top: 0em; }
+	55% { margin-top: 0em; }
+  100%   { margin-top: -4.69em; }
 }
 
 @-moz-keyframes scrollation {
-  from { margin-top: 2.69em;  }
-  to   { margin-top: -2.69em; }
+  0% { margin-top: 4.69em;  }
+	40% { margin-top: 0em; }
+	60% { margin-top: 0em; }
+  100%   { margin-top: -4.69em; }
 }
 
 @-o-keyframes scrollation {
-  from { margin-top: 2.69em;  }
-  to   { margin-top: -2.69em; }
-}
-
-@keyframes scrollator {
-  from { margin-top: 3.37em;  }
-  to   { margin-top: -2.01em; }
-}
-
-@-webkit-keyframes scrollator {
-  from { margin-top: 3.37em;  }
-  to   { margin-top: -2.01em; }
-}
-
-@-moz-keyframes scrollator {
-  from { margin-top: 3.37em;  }
-  to   { margin-top: -2.01em; }
-}
-
-@-o-keyframes scrollator {
-  from { margin-top: 3.37em;  }
-  to   { margin-top: -2.01em; }
+  0% { margin-top: 4.69em;  }
+	40% { margin-top: 0em; }
+	60% { margin-top: 0em; }
+  100%   { margin-top: -4.69em; }
 }
 
 /*.logo {
