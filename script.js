@@ -79,5 +79,19 @@ $(function() {
       up = false;
     });
   })();
+
+/*
+** Pausing the association scroll on hover
+*/
+ (function() {
+    var imgs = $('.scrollation > a > img');
+    $('.scrollation').hover(function(){
+      imgs.css('-webkit-animation-play-state', 'paused'); 
+    }, function(){
+      imgs.css('-webkit-animation-play-state', 'running'); 
+    });
+  })();
+  
+  
 });
 
