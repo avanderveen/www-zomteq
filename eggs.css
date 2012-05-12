@@ -1,0 +1,17 @@
+ul.nav > li {
+  display: inline-block;
+  font-size: 1.2em;
+  margin: 0.3em;
+  width: 1em;
+  height: 1em;
+  border-bottom: 0.2em solid #777;
+  border-radius: 1em;
+  box-shadow: 0 0 0.3em 0.15em #dfdfdf inset;
+}
+
+ul.nav > li.active {
+  background: white;
+  box-shadow: 0 0 0.3em 0.15em #dfdfdf inset;
+  border-color: #efefef;
+  border-bottom-color: #777;
+}

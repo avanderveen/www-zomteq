@@ -1,0 +1,29 @@
+ul.nav > li {
+  display: inline-block;
+  padding-left: 0.65em;
+  padding-right: 0.65em;
+  margin-left: -0.3em;
+  min-width: 0.65em;
+  height: 2em;
+  line-height: 1.9em;
+  vertical-align: top;
+  background: white;
+  border-left: 0.2em solid #ccc;
+}
+
+ul.nav > li.active {
+  border-bottom: 0.15em solid #777;
+}
+
+ul.nav > li:first-child {
+  margin-left: 0em;
+}
+
+ul.nav > li:last-child {
+  border-right: 0.2em solid #ccc;
+}
+
+ul.nav > li:hover > .content,
+ul.nav > li.active > .content {
+  margin-top: 2.8em;
+}
