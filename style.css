@@ -185,6 +185,7 @@ body {
 }
 
 .contactbox:after {
+/* display: none; * hide/show */
   float: left;
   padding: 9%;
   padding-top: 9%;
