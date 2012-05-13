@@ -1,4 +1,6 @@
 $(function() {
+  var emailTest = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
   var slideWidth = 0;
   function detectSlideWidth() {
     var w = 0, slides = $('ul.slides > li');
@@ -63,7 +65,7 @@ $(function() {
   
   $(window).resize(detectSlideWidth);
 
-  /* contact form */
+  /* contact form - hide/show */
   (function() {
     var up = false;
     $('.contactbox').hide().click(function() {
@@ -92,6 +94,34 @@ $(function() {
     });
   })();
   
-  
+  /* contact form - submt email */
+/////////////////////////////////////////////////////////////////////
+/*// Not working right now, but this is the basic stuff for firing off the email
+/////////////////////////////////////////////////////////////////////
+// Some info on sending emails:
+//  * Full Docs:     http://docs.emailyak.com/send-email.html
+//  * Example Send:  http://docs.emailyak.com/post-requests.html
+  (function() {
+    var baseUrl = 'https://api.emailyak.com/v1/6p0lmc8io541lwl/json/';
+    function sendEmail() {
+      var messageBody = $('.contactbox textarea').val(),
+          fromAddress = $('.contactbox input').val();
+      if( !emailTest.test(fromAddress) || messageBody === "" ) return;
+      $.post(baseUrl + 'send/email', {
+        FromAddress: fromAddress,
+        ToAddress:   'andrew@zomteq.com,jacob@zomteq.com,zombo@zomteq.com',
+        Subject:     '[zomteq.com] Email from contact form',
+        TextBody:    messageBody
+      }, function(response) {
+        console.log(response);
+      }, 'json');
+      $('.contactbox textarea').val('');
+      $('.contactbox input').val('');
+    }
+    $('.contactbox input').keyup(function(e) {
+      if( e.which == 13 ) sendEmail();
+    });
+    $('.contactbox button').click(sendEmail);
+  })(); */
 });
 
