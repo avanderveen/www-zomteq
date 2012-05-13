@@ -23,8 +23,7 @@ body {
 .container {
   margin: 0 auto;
   width: 48em;
-  max-width: 95%;
-  min-width: 24em;
+  min-width: 26em;
   text-align: left;
 }
 

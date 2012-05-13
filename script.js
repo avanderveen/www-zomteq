@@ -42,23 +42,11 @@ $(function() {
   });
 
   $('.navleft').click(function() {
-    var prev = $('ul.nav > li.active').prev();
-    console.log(prev);
-    if( prev.length == 0  )
-      prev = $('ul.nav > li:last-child');
-    if( prev.length == 0 )
-      return;
-    prev.click();
-  });
+    navleft();
+ });
 
   $('.navright').click(function() {
-    var next = $('ul.nav > li.active').next();
-    console.log(next);
-    if( next.length == 0 )
-      next = $('ul.nav > li:first-child');
-    if( next.length == 0 )
-      return;
-    next.click();
+    navright();
   });
   
   $(window).resize(detectSlideWidth);
@@ -92,6 +80,43 @@ $(function() {
     });
   })();
   
+
+/*
+** Key press to change pages
+*/
   
+  $("body").keydown(function(e) {
+    if(e.keyCode == 37) { // left
+      navleft();
+    }
+    else if(e.keyCode == 39) { // right
+      navright();
+    }
+  });
+
+
+
+/*
+** Helpers
+*/
+  var navright = function(){
+     var next = $('ul.nav > li.active').next();
+    console.log(next);
+    if( next.length == 0 )
+      next = $('ul.nav > li:first-child');
+    if( next.length == 0 )
+      return;
+    next.click();
+  };
+  navleft = function(){
+    var prev = $('ul.nav > li.active').prev();
+    console.log(prev);
+    if( prev.length == 0  )
+      prev = $('ul.nav > li:last-child');
+    if( prev.length == 0 )
+      return;
+    prev.click();
+  };
+ 
 });
 
