@@ -323,13 +323,24 @@ ul.nav:hover > li.active:hover > .content {
   display: inline-block;
 }
 
+@-webkit-keyframes drop{
+  0% { 
+    opacity:0;
+    margin-top:.75em;
+  }
+  100% {
+    opacity:1;
+    margin-top:2.35em;
+  }
+}
+
 ul.nav > li:hover > .content,
 ul.nav > li.active > .content {
   display: inline-block;
   font-size: 0.8em;
   position: absolute;
-  margin-top: 1.95em;
-  margin-left: -1.02em;
+  margin-top: 2.35em;
+  margin-left: -3.02em;
   padding-left: 0.4em;
   padding-right: 0.4em;
   line-height: 1.5em;
@@ -339,7 +350,10 @@ ul.nav > li.active > .content {
   border: 0.2em solid #efefef;
   border-top: none;
   box-shadow: 0 0 0.75em 0.25em #e0e0e0 inset;
+  -webkit-animation:drop 0.7s 1 linear;
+  z-index:-100;
 }
+
 
 ul.slides {
   font-family: 'Georgia', Serif;
