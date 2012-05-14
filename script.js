@@ -95,8 +95,6 @@ $(function() {
     }
   });
 
-
-
 /*
 ** Helpers
 */
@@ -118,7 +116,8 @@ $(function() {
       return;
     prev.click();
   };
- 
+
+
   /* contact form - submt email */
 /////////////////////////////////////////////////////////////////////
 /*// Not working right now, but this is the basic stuff for firing off the email
