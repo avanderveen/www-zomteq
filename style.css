@@ -23,7 +23,6 @@ body {
 .container {
   margin: 0 auto;
   width: 48em;
-  min-width: 26em;
   text-align: left;
 }
 
@@ -85,13 +84,6 @@ body {
   -moz-animation-delay: -6s;
   -o-animation-delay: -6s;
 }
-
-/*.logo {
-  float: right;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-  height: 2em;
-}*/
 
 .footer {
   font-size: 0.8em;
@@ -302,6 +294,7 @@ ul.nav > li.active > .content {
   position: absolute;
   margin-top: 2.35em;
   margin-left: -3.02em;
+  padding-top: 0.25em;
   padding-left: 0.4em;
   padding-right: 0.4em;
   line-height: 1.5em;
@@ -311,12 +304,10 @@ ul.nav > li.active > .content {
   border: 0.2em solid #efefef;
   border-top: none;
   box-shadow: 0 0 0.75em 0.25em #e0e0e0 inset;
-
   animation:drop 0.5s 1 linear;
   -webkit-animation:drop 0.5s 1 linear;
   -moz-animation:drop 0.5s 1 linear;
   -o-animation:drop 0.5s 1 linear;
-
   z-index:-100;
 }
 
