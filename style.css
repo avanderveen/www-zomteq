@@ -431,6 +431,9 @@ ul.slides > li p > * {
 .team .left {
   float: left;
   margin-left: 1.5em;
+  max-width: 39.5em;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 .team .left > p {
