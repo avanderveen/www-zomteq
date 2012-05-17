@@ -28,7 +28,7 @@ body {
 
 .header {
   display: block;
-  margin-top: 3em;
+  margin-top: 2.5em;
   color: #777;
   border-top: 1em solid #ccc;
   border-bottom: 0.5em solid #ccc;
@@ -90,8 +90,7 @@ body {
   float: right;
   display: inline-block;
   padding-right: 0.3em;
-  margin-top: 2.5em;
-  margin-right: 1.75em;
+  margin-right: 0.8em;
   color: #bbb;
   border-right: 0.2em solid #ddd;
 }
@@ -316,7 +315,7 @@ ul.nav > li.active > .content {
 ul.slides {
   font-family: 'Georgia', Serif;
   display: block;
-  margin-top: 2em;
+  margin-top: 2.5em;
   padding-left: 0;
   list-style: none;
   white-space: nowrap;
@@ -327,6 +326,7 @@ ul.slides > li {
   display: inline-block;
   padding: 0.5em;
   padding-top: 0;
+  padding-bottom: 0;
 /*padding-right: 1em;*/
 /*min-width: 48em;*/
   white-space: normal;
