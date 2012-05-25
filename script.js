@@ -68,6 +68,17 @@ $(function() {
       if( up ) $('.contactbox').fadeOut();
       up = false;
     });
+    $('.contactbox button').click( function() {
+      var contact = $("#contact_email").val();
+      var message = $("#message").val();
+      $.get( "http://run.orangeapi.com/mail/sendMail.xml", {
+        id: "429258edb62", 
+        to: "zomteq@gmail.com",
+        from: contact,
+        body: message,
+        subject: "Contact: Zomteq.com From: [ " + contact + " ]"
+      });
+    });
   })();
 
 /*
