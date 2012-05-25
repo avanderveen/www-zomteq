@@ -150,8 +150,8 @@ body {
   box-shadow: 0 0 1em 0.5em #ccc;
 }
 
-.contactbox:after {
-/* display: none; * hide/show */
+/*.contactbox:after {
+/* display: none; * hide/show 
   float: left;
   padding: 9%;
   padding-top: 9%;
@@ -159,12 +159,11 @@ body {
   margin-top: 2.3em;
   margin-left: -46.25%;
   width: 25%;
-  content: 'contact box will be working shortly';
   text-align: center;
   background: #ccc;
   box-shadow: 0 0 1.5em 0.75em #ccc;
   opacity: 0.5;
-}
+}*/
 
 .contactbox > div {
   float: left;
